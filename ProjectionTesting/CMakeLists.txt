@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 2.8)
+project( TX52 )
+find_package(VISP REQUIRED)
+include(${VISP_USE_FILE})
+add_executable( main main.cpp )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+target_link_libraries( main ${OpenCV_LIBS} )
