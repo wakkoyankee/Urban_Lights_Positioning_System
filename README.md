@@ -1,5 +1,5 @@
 # Urban_Lights_Positioning_System
-Study of the use of mapped urban lights for positioning system in hopes to solve urban canyon issues. Uses libraries such as Visp and openCV
+Study of the use of mapped urban lights and mounted omnidirectional camera for autonomous vehicule positioning system. Uses libraries such as Visp and openCV
 
 
 ## Positioning system
@@ -9,7 +9,7 @@ In estimePosePointsOmni directory :
 - Premapped street lights (list of light coordinates)
 <img src="map.png"> 
 
-- Light detection / image processing
+- Light detection / image processing with omnidirectional camera
 <img src="ImageProcessing/parametrisation.png"> 
 
 - Pose estimation
@@ -17,18 +17,14 @@ In estimePosePointsOmni directory :
 
 - Results (use of the etudeTraj.m file)
 <img src="Study3/traj.png"> 
+<img src="Study3/erreur.png"> 
 
+## Omidirectional camera simulation
 
-Read the report for full explanation.
+In projectionTesting directory
 
-- Rapport_TX_Hadrien_Rothea -> Rapport
+<img src="ImageProjectionTesting/Parametres projection.png"> 
+<img src="ImageProjectionTesting/projection defaut.png"> 
+<img src="ImageProjectionTesting/rx 2pi6 rz pi4.png"> 
+<img src="ImageProjectionTesting/translation x.png"> 
 
-- Etude X -> dossier avec les graphiques des etudes des fichiers datax.txt
-
-- ProjectionTesting -> programme avec les tests sur la projection
-
-- etudeTraj.m -> script executable sur octave ou matlab
-							-> copier/coller le contenue de datax.txt dans le tab = []
-							-> puis executer le script pour voir les graphiques
-							
- - XXXImage -> dossier d'image par thème
